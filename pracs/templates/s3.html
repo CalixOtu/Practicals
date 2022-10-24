@@ -1,0 +1,147 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>solution</title>
+  </head>
+<body style="background: #eee url('https://i.imgur.com/eeQeRmk.png'); /* https://subtlepatterns.com/weave/ */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1;
+  color: #585858;
+  padding: 22px 10px;
+  padding-bottom: 55px;">
+    {% block content %}
+ <div id="wrapper" style="display: block;
+  width: 850px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 17px;
+  -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);">
+  <h1 style="font-family: 'Amarante', Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3.6em;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  text-align: center;">REFRACTION AT A PLANE SURFACE 1 (L.1)</h1>
+
+  <table id="keywords" cellspacing="0" cellpadding="0" style="margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;">
+    <thead style="cursor: pointer;
+  background: #c9dff0;">
+      <tr>
+        <th style="font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;"><span style="padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;">U(cm)</span></th>
+        <th style="font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;"><span style="padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;">V(cm)</span></th>
+        <th style="font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;"><span style="padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;">1/u</span></th>
+        <th style="font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;"><span style="padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;">1/v</span></th>
+        <th style="font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;"><span style="padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;">1/f</span></th>
+      </tr>
+    </thead>
+    <tbody style="align: center; padding: 15px 10px">
+      <tr style="text-align: center; padding: 15px 10px">
+        <td style="text-align: center; padding: 15px 10px">{{ u1 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ v1 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ c1 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ d1 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ f1 }}</td>
+      </tr>
+    <tr style="text-align: center; padding: 15px 10px">
+        <td style="text-align: center; padding: 15px 10px">{{ u2 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ v2 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ c2 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ d2 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ f2 }}</td>
+      </tr>
+    <tr style="text-align: center; padding: 15px 10px">
+        <td style="text-align: center; padding: 15px 10px">{{ u3 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ v3 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ c3 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ d3 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ f3 }}</td>
+      </tr>
+    <tr style="text-align: center; padding: 15px 10px">
+        <td style="text-align: center; padding: 15px 10px">{{ u4 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ v4 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ c4 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ d4 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ f4 }}</td>
+      </tr>
+    <tr style="text-align: center; padding: 15px 10px">
+        <td style="text-align: center; padding: 15px 10px">{{ u5 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ v5 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ c5 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ d5 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ f5 }}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+     <h1 style="font-family: 'Amarante', Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3.6em;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  text-align: center;">WORKINGS</h1>
+    <h4>
+        The Solution... <br><br><br>
+        Alternative... {{ TL2 }}<br><br><br>
+        Your graph will show up and your
+        slope is {{ b }}, it represents the... while the <br><br><br>
+        Intercept is {{ a }}
+
+    </h4>
+     <h2>
+         Precautions to choose from:-
+     </h2>
+     <h3>
+         1. -----------<br>
+         2. -----------<br>
+         3. -----------<br>
+         4. -----------
+     </h3>
+     <button onclick="window.print()" style="height: 500%;
+    font-family: 'Amarante', Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3.6em;
+   width: 20%;
+   height: 100%;
+   border-radius: 15px;
+   border: 100%;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, lightblue, lightblue);">Print Solution in PDF</button>
+ </div>
+{% endblock %}
+
+
+</body>
+</html>
+
+

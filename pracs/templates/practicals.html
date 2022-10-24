@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicals</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8.5rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #27ae60;
+  border-radius: 5rem;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.heading span {
+  font-family: 'Satisfy', cursive;
+  font-size: 3rem;
+  color: orange;
+}
+
+.heading h3 {
+  font-size: 3rem;
+  color: #130f40;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .7rem 1.8rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #fff;
+  background: orange;
+  border-radius: .5rem;
+}
+
+.btn:hover {
+  background: #130f40;
+}
+
+
+
+#menu-btn {
+  display: none;
+}
+
+@-webkit-keyframes fadeUp {
+  0% {
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+    opacity: 0;
+  }
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.home .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 41rem;
+          flex: 1 1 41rem;
+}
+
+.home .content span {
+  font-size: 2rem;
+  color: #27ae60;
+}
+
+.home .content h3 {
+  font-size: 4rem;
+  color: #130f40;
+  padding-top: 1rem;
+}
+
+.home .content p {
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.home .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 41rem;
+          flex: 1 1 41rem;
+  margin: 2rem 0;
+  pointer-events: none;
+}
+
+.home .image .home-img {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.home .home-parallax-img {
+  position: absolute;
+  top: -10rem;
+  right: -10rem;
+  width: 80vw;
+}
+
+.popular .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.popular .box-container .box {
+  border-radius: .5rem;
+  position: relative;
+  background: #f7f7f7;
+  padding: 2rem;
+  text-align: center;
+}
+.popular .box-container .box .fa-heart:hover {
+  color: #27ae60;
+}
+.popular .box-container .box .image img {
+  height: 15rem;
+}
+
+.popular .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #130f40;
+}
+.popular .box-container .box .content .price {
+  font-size: 2rem;
+  color: #130f40;
+}
+
+.popular .box-container .box .content .price span {
+  font-size: 1.5rem;
+  color: #666;
+  text-decoration: line-through;
+}
+
+
+
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  #social{
+    display: none;
+  }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .shopping-cart-container .cart-total .box {
+    text-align: center;
+    width: 20%;
+  }
+  .shopping-cart-container .cart-total .box .btn {
+    width: 50%;
+  }
+  .home .content h3 {
+    font-size: 3rem;
+  }
+  .home .content p {
+    font-size: 1.5rem;
+  }
+}
+    </style>
+
+</head>
+<body>
+
+<section class="popular" id="popular">
+
+    <div class="heading">
+        <span>PHYSICS</span>
+        <h3>PHY121</h3>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="content">
+                <h3>Experiment L.1</h3>
+                <div class="price">Refraction at a plane surface</div>
+                <a href="p/p1" class="btn">Start Practicals</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h3>Experiment L.4</h3>
+                <div class="price">Measurement of refractive index</div>
+                <a href="p/p2" class="btn">Start Practicals</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h3>Experiment L.5</h3>
+                <div class="price">To determine focal length of a concave mirror</div>
+                <a href="p/p3" class="btn">Start Practicals</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h3>Experiment L.6</h3>
+                <div class="price">Focal length of concave lens (Displacement method)</div>
+                <a href="p/p4" class="btn">Start Practicals</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h3>Experiment S.1</h3>
+                <div class="price">Sonometer</div>
+                <a href="p/p5" class="btn">Start Practicals</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h3>Experiment S.3</h3>
+                <div class="price">The Resonance Tube</div>
+                <a href="p/p6" class="btn">Start Practicals</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h3>Experiment S.4</h3>
+                <div class="price">Resonance Tube II</div>
+                <a href="p/p7" class="btn">Start Practicals</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h3>Experiment E.5</h3>
+                <div class="price">Comparison of EMFs</div>
+                <a href="p/p8" class="btn">Start Practicals</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h3>Experiment E.6</h3>
+                <div class="price">Potentiometer</div>
+                <a href="p/p9" class="btn">Start Practicals</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+</body>
+</html>

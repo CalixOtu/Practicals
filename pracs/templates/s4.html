@@ -1,0 +1,147 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>solution</title>
+  </head>
+<body style="background: #eee url('https://i.imgur.com/eeQeRmk.png'); /* https://subtlepatterns.com/weave/ */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1;
+  color: #585858;
+  padding: 22px 10px;
+  padding-bottom: 55px;">
+    {% block content %}
+ <div id="wrapper" style="display: block;
+  width: 850px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 17px;
+  -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);">
+  <h1 style="font-family: 'Amarante', Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3.6em;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  text-align: center;">FOCAL LENGTH OF CONVEX LENS (DISPLACEMENT METHOD) (L.6)</h1>
+
+  <table id="keywords" cellspacing="0" cellpadding="0" style="margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;">
+    <thead style="cursor: pointer;
+  background: #c9dff0;">
+      <tr>
+        <th style="font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;"><span style="padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;">P<sub>1</sub>(cm)</span></th>
+        <th style="font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;"><span style="padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;">P<sub>2</sub>(cm)</span></th>
+        <th style="font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;"><span style="padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;">D(cm)</span></th>
+        <th style="font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;"><span style="padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;">P<sub>1</sub>-P<sub>2</sub>=d (cm)</span></th>
+        <th style="font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;"><span style="padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;">D<sup>2</sup>-d<sup>2</sup> (cm<sup>2</sup>)</span></th>
+      </tr>
+    </thead>
+    <tbody style="align: center; padding: 15px 10px">
+      <tr style="text-align: center; padding: 15px 10px">
+        <td style="text-align: center; padding: 15px 10px">{{ t1 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ c1 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ n1 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ r1 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ x1 }}</td>
+      </tr>
+    <tr style="text-align: center; padding: 15px 10px">
+        <td style="text-align: center; padding: 15px 10px">{{ t2 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ c2 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ n2 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ r2 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ x2 }}</td>
+      </tr>
+    <tr style="text-align: center; padding: 15px 10px">
+        <td style="text-align: center; padding: 15px 10px">{{ t3 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ c3 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ n3 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ r3 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ x3 }}</td>
+      </tr>
+    <tr style="text-align: center; padding: 15px 10px">
+        <td style="text-align: center; padding: 15px 10px">{{ t4 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ c4 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ n4 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ r4 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ x4 }}</td>
+      </tr>
+    <tr style="text-align: center; padding: 15px 10px">
+        <td style="text-align: center; padding: 15px 10px">{{ t5 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ c5 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ n5 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ r5 }}</td>
+        <td style="text-align: center; padding: 15px 10px">{{ x5 }}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+     <h1 style="font-family: 'Amarante', Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3.6em;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  text-align: center;">WORKINGS</h1>
+    <h4>
+        The Solution... <br><br><br>
+        Alternative... {{ TL2 }}<br><br><br>
+        Your graph will show up and your
+        slope is {{ b }}, it represents the... while the <br><br><br>
+        Intercept is {{ a }}
+
+    </h4>
+     <h2>
+         Precautions to choose from:-
+     </h2>
+     <h3>
+         1. -----------<br>
+         2. -----------<br>
+         3. -----------<br>
+         4. -----------
+     </h3>
+     <button onclick="window.print()" style="height: 500%;
+    font-family: 'Amarante', Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3.6em;
+   width: 20%;
+   height: 100%;
+   border-radius: 15px;
+   border: 100%;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, lightblue, lightblue);">Print Solution in PDF</button>
+ </div>
+{% endblock %}
+
+
+</body>
+</html>
+
+

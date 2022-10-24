@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style=" margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;">
+  <head>
+    <meta charset="UTF-8">
+    <title> p1 </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+<body style="height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);">
+  <div class="container" style="max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);">
+    {% block content %}
+    <div class="title" style="font-size: 25px;
+  font-weight: 500;
+  position: relative;">TO DETERMINE FOCAL LENGTH OF A CONCAVE MIRROR (L.5)</div>
+    <div class="content">
+      <form action="L3">
+        <div class="user-details" style="display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;">
+          <div class="input-box" style=" margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);">
+
+            <span class="details" style=" display: block;
+  font-weight: 500;
+  margin-bottom: 5px;">U(cm) values</span>
+            <input type="text" name="u1" placeholder="1st" required>
+            <input type="text" name="u2" placeholder="2nd" required>
+            <input type="text" name="u3" placeholder="3rd" required>
+            <input type="text" name="u4" placeholder="4th" required>
+            <input type="text" name="u5" placeholder="5th" required>
+          </div>
+          <div class="input-box" style=" margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);">
+            <span class="details" style=" display: block;
+  font-weight: 500;
+  margin-bottom: 5px;">V(cm) values</span>
+            <input type="text" name="v1" placeholder="1st" required>
+            <input type="text" name="v2" placeholder="2nd" required>
+            <input type="text" name="v3" placeholder="3rd" required>
+            <input type="text" name="v4" placeholder="4th" required>
+            <input type="text" name="v5" placeholder="5th" required>
+          </div>
+
+        </div>
+        <div style="height: 45px;
+   margin: 35px 0" class="button">
+          <input style="height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);" type="submit" name="See solution" value="SEE FULL SOLUTION">
+        </div>
+      </form>
+    </div>
+    {% endblock %}
+  </div>
+
+</body>
+</html>
